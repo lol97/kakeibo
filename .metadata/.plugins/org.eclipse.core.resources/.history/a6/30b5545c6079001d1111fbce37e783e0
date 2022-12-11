@@ -1,0 +1,15 @@
+'''
+code for simple kakeibo
+IDEA :
+-> write transaction and save to 'dataframe pandas'
+by lol97 / warteg dust
+'''
+
+import pandas as pd
+from datetime import datetime
+
+
+def createTransaction(name, nominal, date):
+	if date == nill:
+		date = now()
+	

@@ -1,0 +1,19 @@
+'''
+code for simple kakeibo
+IDEA :
+-> write transaction and save to 'dataframe pandas'
+by lol97 / warteg dust
+'''
+
+from datetime import datetime
+import pandas as pd
+
+
+def createTransaction(name, nominal, date = datetime.now()):
+	print("creating transaction")
+	print("name -> " + name)
+	print("nominal -> " + str(nominal))
+	print("waktu -> " + str(date))
+	print("creating transaction")
+
+createTransaction("belanja", 1000000)

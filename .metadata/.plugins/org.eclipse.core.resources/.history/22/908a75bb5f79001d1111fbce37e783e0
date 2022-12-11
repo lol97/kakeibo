@@ -1,0 +1,11 @@
+/**
+* code for simple kakeibo
+IDEA :
+-> write transaction and save to 'dataframe pandas'
+by lol97 / warteg dust
+**/
+
+import pandas as pd
+
+def createTransaction(name, nominal, date):
+	
