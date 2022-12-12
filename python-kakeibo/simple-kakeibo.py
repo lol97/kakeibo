@@ -5,7 +5,7 @@ IDEA :
 by lol97 / warteg dust
 '''
 
-from datetime import datetime
+from datetime import datetime, date
 import pandas as pd
 import os 
 
@@ -44,4 +44,13 @@ def createTransaction(name, nominal, date = datetime.now(), df = df):
 	dfWrite(df)
 	print("creating transaction")
 
-createTransaction("belanja", 1000000, df = df)
+def menu():
+	print("------------------------CREATE TRANSACTION-------------------")
+	name = input("nama transaksi : ")
+	nominal = int(input("total nominal : "))
+	date_entry = input('Enter a date in YYYY-MM-DD format : ')
+	year, month, day = map(int, date_entry.split('-'))
+	date1 = datetime(year, month, day)
+	createTransaction(name, nominal, date1, df)
+
+menu()
