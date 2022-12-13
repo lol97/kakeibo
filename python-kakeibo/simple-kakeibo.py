@@ -44,6 +44,9 @@ def createTransaction(name, nominal, date = datetime.now(), df = df):
 	dfWrite(df)
 	print("creating transaction")
 
+def showTransaction(df = df):
+	print(df.to_markdown())
+
 def menu():
 	print("------------------------CREATE TRANSACTION-------------------")
 	name = input("nama transaksi : ")
@@ -53,4 +56,6 @@ def menu():
 	date1 = datetime(year, month, day)
 	createTransaction(name, nominal, date1, df)
 
-menu()
+
+# menu()
+showTransaction()
